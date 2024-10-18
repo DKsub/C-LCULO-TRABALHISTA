@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CÁLCULO TRBALHISTA</title>
+    <link rel="stylesheet" href="CSS/calculo_Trbalhista.css">
+    <script src="JSS/calculo_Trabalhista.js" defer></script>
+
+</head>
+<body>
+        </div>
+    <div id="geral">
+       
+        
+        <div id="form" class="caixa ">
+            <h2>CÁLCULO TRABALHISTA/CLT</h2>
+
+            <h3>DADOS PESSOAIS</h3>
+
+            <label for="nome">NOME: </label>
+            <input type="text" name="nome" id="nome" class="input"  placeholder="Informe o Nome"/>
+
+            <label for="valorHor">VALOR DA HORA: </label>
+            <input type="number" name="Valor" id="valorHora" class="input"  placeholder="Informe o Valor Da Hora" step="0.01"/>
+
+            <label for="hora">QUANTIDADE DE HORAS-TRABALHADAS: </label>
+            <input type="number" name="horaTrabalhada" id="quantidadeTrabalhada" class="input"placeholder="Informe o Total De Horas" step="0.01"/>
+            
+            <label for="deduções">OUTRAS DEDUÇÕES: </label>
+            <input type="number" name="outrasDedu" id="outrasDeducoes" class="input" placeholder="Informe a Dedução Desejada"  step="0.01"/>
+
+            <label for="valeTransporte">VALE TRANSPORTE(S/N):</label>
+            <input type="text" id="inputVale" maxlength="1"  class="input" placeholder="Vale Transporte" >
+
+
+            <div class="areaBtn">
+                <button id="btnCalcular"> CALCULAR </button>
+               
+                <div class="areaBtn">
+                    <button id="btnVSair"> SAIR </button>
+                </div>
+            </div>
+
+        </div>
+    
+        <div id="resultado" class="caixa ocultar print">
+            <h3> RESULTADOS: </h3>
+            <div id="divSalarioBruto" class="result">
+            
+            </div>
+            <div id="divDescontoINSS" class="result">
+               
+            </div>
+            <div id="divDescontoIRPF" class="result">
+                
+            </div>
+            <div id="divDescontoTransporte" class="result">
+               
+            </div>
+            <div id="divDeducao" class="result">
+              
+            </div>
+            <div id="divSalarioLiquido" class="result">
+               
+            </div>
+            
+           
+            <div class="areaBtn">        
+                <button onclick="window.print();">IMPRIMIR RELATÓRIO</button>
+            </div>
+
+            <div id="btnVolt"class="areaBtn">        
+                <button onclick="">VOLTAR</button>
+            </div>
+
+            
+            <div id="btnLimpa"class="areaBtn">        
+                <button onclick="">LIMPAR</button>
+            </div>
+        </div>
+        
+        </div>
